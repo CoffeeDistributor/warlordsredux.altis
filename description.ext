@@ -3,7 +3,7 @@
 #include "scripts\taw_vd\GUI.h"
 
 
-onLoadName = "Warlords Redux 2.4"; 
+onLoadName = "Warlords Redux 2.3"; 
 dev = "Jezuro + WSV";
 author = "Jezuro + WSV";
 
@@ -97,6 +97,15 @@ allowFunctionsLog = 1;
 
 		class CfgCommunicationMenu
 		{
+			class VAM_main_menu
+			{
+				text = $STR_VAM_MAIN_MENU_NAME;
+				submenu = "#USER:VAMsub";
+				expression = "";
+				icon = "";
+				cursor = "";
+				removeAfterExpressionCall = 0;
+			};
 
 			#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
 
